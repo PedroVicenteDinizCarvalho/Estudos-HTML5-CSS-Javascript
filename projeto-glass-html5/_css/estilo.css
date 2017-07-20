@@ -108,6 +108,16 @@ section#corpo{
 	border-right: 1px solid #606060;
 	padding-right: 15px;
 }
+section#corpo hgroup h3{
+	font-size: 13pt;
+	text-align: right;
+}
+section#corpo hgroup h1{
+	background-color: #606060;
+}
+section#corpo h1{
+	background-color: #606060;
+} 
 table#tabelaspec{
 	border: 1px solid #606060;
 	border-spacing: 0px;
@@ -146,10 +156,21 @@ aside#lateral{
 	width: 350px;
 	float: right;
 }
+aside#lateral h1{
+	background-color: #606060;
+}
+aside#lateral video#video-recente{
+	display: block;
+	width: 350px;
+}
 footer#rodape{
 	clear: both;
 	border-top: 1px solid #606060;
 }
 footer#rodape p{
 	text-align: center;
+}
+footer#rodape a{
+	text-decoration: none;
+	color: #000000;
 }
