@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
     <script language="javascript" src="_javascript/funcoes.js"></script>
 </head>
 <body>
@@ -26,38 +27,92 @@
                 </nav>
         </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header> 
+                <hgroup id="cabecalho-artigo">
+                    <h3>Fale Conosco > Contato</h3>
+                    <h1>Formulário de Contato</h1>
+                    <h2>por Gustavo Guanabara</h2>
+                    <h3>Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+            <form method="post" id="fContato" action="mailto:contato@cursoemvideo.com">
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+                        <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" /></p>
+                        <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+                        <p><label for="cMail">E-mail:</label><input type="email"  name="tMail" id="cMail" size="20" maxlength="40" placeholder="Melhor Email"/></p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                                <input type="radio" name="tSexo" id="cMasc" checked><label for="cMasc">Masculino</label><br/>
+                                <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                        </fieldset>
+                        <p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"/></p>
+                </fieldset>
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                        <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="25" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
+                        <p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="1999"/></p>
+                        <p><label for="cEst">Estado:</label>
+                            <select name="tEst" id="cEst">
+                                <!-- Região Norte -->
+                                <optgroup label="Região Norte"><option value="Acre">Acre</option>
+                                <option value="Amazônia">Amazônia</option>
+                                <option value="Amapá">Amapá</option>
+                                <option value="Pará">Pará</option>
+                                <option value="Roraíma">Roraíma</option>
+                                <option value="Rondônia">Rondônia</option>
+                                <option value="Tocantins">Tocantins</option></optgroup>
+                                <!-- Região Nordeste -->
+                                <optgroup label="Região Nordeste"><option value="Maranhão">Maranhão</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Piauí">Piauí</option>
+                                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                <option value="Paraíba">Paraíba</option>
+                                <option value="Pernambuco">Pernambuco</option>
+                                <option value="Alagoas">Alagoas</option>
+                                <option value="Sergipe">Sergipe</option>
+                                <option value="Bahia">Bahia</option></optgroup>
+                                <!-- Região Centro-Oeste -->
+                                <optgroup label="Região Oeste"><option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Goiás">Goiás</option>
+                                <option value="Brasília">Brasília</option>
+                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option></optgroup>
+                                <!-- Região Sudeste -->
+                                <optgroup label="Região Sudeste"><option value="Minas Gerais" selected>Minas Gerais</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Espirito Santo">Espirito Santo</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option></optgroup>
+                                <!--Região Sul -->
+                                <optgroup label="Região Sul"><option value="Paraná">Paraná</option>
+                                <option value="Santa Catarina">Santa Catarina</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option></optgroup> 
+                            </select></p>
+                        <p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+                        <datalist id="cidades">
+                            <option value="São Lourenço"></option>
+                            <option value="São Paulo"></option>
+                            <option value="Rio de Janeiro"></option>
+                        </datalist>
+                </fieldset>
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                        <p><label for="cUrg">Grau de Urgência:</label>Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Max</p>
+                        <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+                </fieldset>
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                        <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p><label for="cCor">Cor:</label></p>
+                        <p><label for="cQtd">Quantidade:</label></p>
+                        <p><label for="cTot">Preço Total: R$</label></p>
+                </fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+            [BOTÃO ENVIAR]
+            </form>
+        </article>
+    </section>
 
 <footer id="rodape">
     <p>
