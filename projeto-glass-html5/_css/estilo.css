@@ -19,6 +19,7 @@ div#interface {
 p{
 	text-align: justify;
 	text-indent: 50px;
+	font-family: Verdana;
 }
 header#cabecalho img#icone{
 	position: absolute;
@@ -114,9 +115,15 @@ section#corpo hgroup h3{
 }
 section#corpo hgroup h1{
 	background-color: #606060;
+	font-family: 'FonteLogo', sans-serif;
+}
+section#corpo hgroup h2{
+	font-family: Verdana;
+	font-size: 13pt;
 }
 section#corpo h1{
 	background-color: #606060;
+	font-family: 'FonteLogo', sans-serif;
 } 
 table#tabelaspec{
 	border: 1px solid #606060;
@@ -158,6 +165,7 @@ aside#lateral{
 }
 aside#lateral h1{
 	background-color: #606060;
+	font-family: 'FonteLogo', sans-serif;
 }
 aside#lateral video#video-recente{
 	display: block;
@@ -173,4 +181,17 @@ footer#rodape p{
 footer#rodape a{
 	text-decoration: none;
 	color: #000000;
+}
+section#corpo-full h1{
+	font-family: 'FonteLogo', sans-serif;
+	background-color: #606060;
+	font-size: 18pt;
+}
+section#corpo-full h2{
+	font-family: Verdana;
+	font-size: 13pt;
+}
+section#corpo-full h3{
+	text-align: right;
+	width: 750px;
 }
